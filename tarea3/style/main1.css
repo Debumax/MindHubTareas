@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+body{
+    margin: 30px 70px 70px 70px;
+}
+.titulo{}
+.banner{
+    text-align: center;
+    height: 400px;    
+}
+.logo{
+    height: 200px;
+}
+.btnNav{}
+h2{
+    text-align: center;
+    background-color: black;
+    color:rgb(253, 253, 253);
+    padding: 5px;
+}
+.contenedor{
+    padding: 10px;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+}
