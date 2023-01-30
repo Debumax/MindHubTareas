@@ -4,17 +4,22 @@
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 body{
-    margin: 30px 70px 70px 70px;
+    margin: 30px;
+    box-sizing: border-box;    
+}
+header{
+    width: 10%;
 }
 .titulo{
     margin: 10px;
 }
 .banner{
     text-align: center;
-    height: 400px;    
+
+    width: 100%;    
 }
 .logo{
-    height: 200px;
+    height: 200px;   
 }
 .btnNav{
 margin: 4px;
