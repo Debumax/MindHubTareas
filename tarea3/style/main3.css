@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+body{
+    margin: 30px 70px 70px 70px;
+}
+.titulo{
+    margin: 10px;
+}
+.banner{
+    text-align: center;
+    height: 400px;    
+}
+.logo{
+    height: 200px;
+}
+.btnNav{
+margin: 4px;
+color:#ffffff ;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-color: #4b7080;
+background-color: #3BA4C7;
+box-shadow: 3px 3px #827e7e;
+text-decoration: none;
+}
+h2{
+    text-align: center;
+}
+.contenedor{
+    padding: 10px;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+}
