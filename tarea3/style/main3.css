@@ -4,40 +4,47 @@
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     
 }
+
+/*------ etiquetas semanticas----- */
+
+
 h1{
-    border: 2px solid saddlebrown;
+    /* border: 2px solid saddlebrown; */
 }
 
 header{ 
     display: flex;
     flex-direction: column;
-    border: 2px solid violet;  
+    /* border: 2px solid violet;   */
     margin: 7px;
     padding: 5px;
+    
 }
 nav{
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     font-size: 30px;
     margin: 90px 7px 7px 15px;
     padding: 5px;
-    border: 2px solid rebeccapurple;  
+    /* border: 2px solid rebeccapurple;  */
+     
     
 }
 main{
     display: flex;
-    border: 2px solid lightcoral;
+    /* border: 2px solid lightcoral; */
     flex-direction: column;
     align-items: center;
 }
 section{
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     display: flex;
     flex-direction: column;
 }
 h2{
     font-size: 60px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding: 10px; 
     align-self: center;
 }
@@ -46,17 +53,16 @@ h3{
     margin: 10px;
 }
 footer{
-    border: 2px solid mediumpurple;
+    /* border: 2px solid mediumpurple; */
     display: flex;
     justify-content: center;
     font-size: 25px;
-    margin: 35px;
-
+    padding: 30px;
 }
 
 
-/*------ etiquetas semanticas----- */
-/* ----------clases------------  */
+
+/* ----------clases/id------------  */
 
 .titulo {
     font-size: 60px;
@@ -69,26 +75,35 @@ footer{
 .logo{
     display: block;
     height: 250px;    
-    border: 2px solid magenta;
+    border-radius: 10%;
     position: absolute;
     top: 10px;
     left: 30px;
+    background-color: black;
+}
+#pag{
+    background-color: #dbf2f0ba;
 }
 .btnNav{
-
+    border-radius: 10%;
     text-decoration: none;
-    padding: 5px;
-    border: 2px solid red;
-    margin: 5px;
+    padding: 10px;
+    color:black;
+    background-color: #e8f18c;
+    border: 2px solid #030303;
+    margin: 20px;
 }
+
 .banner{
     display: flex;
     align-self: center;
+    
+
 }
 .contenedor{
     align-items: flex-start;
     font-size: 25px;
-    border: 2px solid teal;
+    /* border: 2px solid teal; */
     margin-left: 600px;
     margin-right: 600px;
 }
