@@ -2,44 +2,100 @@
     margin: 0;
     padding: 0;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
+    
 }
-body{
-    margin: 30px;
-    box-sizing: border-box;    
+h1{
+    border: 2px solid saddlebrown;
 }
-header{
-    width: 10%;
-}
-.titulo{
-    margin: 10px;
-}
-.banner{
-    text-align: center;
 
-    width: 100%;    
+header{ 
+    display: flex;
+    flex-direction: column;
+    border: 2px solid violet;  
+    margin: 7px;
+    padding: 5px;
 }
-.logo{
-    height: 200px;   
+nav{
+    display: flex;
+    align-items: flex-start;
+    font-size: 30px;
+    margin: 90px 7px 7px 15px;
+    padding: 5px;
+    border: 2px solid rebeccapurple;  
+    
 }
-.btnNav{
-margin: 4px;
-color:#ffffff ;
-padding-left: 10px;
-padding-right: 10px;
-padding-top: 5px;
-padding-bottom: 5px;
-border-color: #4b7080;
-background-color: #3BA4C7;
-box-shadow: 3px 3px #827e7e;
-text-decoration: none;
+main{
+    display: flex;
+    border: 2px solid lightcoral;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    border: 2px solid greenyellow;
+    display: flex;
+    flex-direction: column;
 }
 h2{
-    text-align: center;
+    font-size: 60px;
+    border: 2px solid blue;
+    padding: 10px; 
+    align-self: center;
 }
-.contenedor{
-    padding: 10px;
+h3{
+    font-size: 40px;
+    margin: 10px;
 }
 footer{
-    padding: 10px;
-    text-align: center;
+    border: 2px solid mediumpurple;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin: 35px;
+
 }
+
+
+/*------ etiquetas semanticas----- */
+/* ----------clases------------  */
+
+.titulo {
+    font-size: 60px;
+    display: block;
+    position: relative;
+    left: 400px;   
+    top: 40px;
+    margin: 10px 0px 90px 0px;
+}
+.logo{
+    display: block;
+    height: 250px;    
+    border: 2px solid magenta;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.btnNav{
+
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid red;
+    margin: 5px;
+}
+.banner{
+    display: flex;
+    align-self: center;
+}
+.contenedor{
+    align-items: flex-start;
+    font-size: 25px;
+    border: 2px solid teal;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+.parrafos{
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+
