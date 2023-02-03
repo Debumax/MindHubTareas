@@ -12,7 +12,12 @@
     <title>Contact</title>
 </head>
 <body>
-    <h1 class="titulo">Mighty Ducks Hockey League</h1>
+    <div class="barraSuperior">
+        <h1 class="titulo">Mighty Ducks Hockey League</h1>
+        <figure>
+            <img src="./img/Logo_Mighty_ducks-01.png" alt="logo" class="logo">
+        </figure>
+    </div>
     <header>            
         <nav>
             <a href="index.html" class="btnNav" >Home</a>
@@ -21,19 +26,23 @@
             <a href="rules.html" class="btnNav">Rules</a>
             <a href="game_info.html" class="btnNav">Game Info</a>
         </nav>
-        <img src="./img/design1_image1.jpg" alt="imagen 1" class="banner"> 
     </header>
     <main>
-        <figure>
-            <img src="./img/Logo_Mighty_ducks-01.png" alt="logo" class="logo">
-            <!-- uso el height porque tb lo vimos en clase -->
-        </figure>
-        <section class="contenedor">
+        <div class="banner">
+            <ul>
+                <li><img src="./img/design1_image1.jpg" alt="imagen 1" ></li>
+                <li><img src="./img/hockey_1.jpg" alt="imagen 1" ></li>
+                <li><img src="./img/hockey_2.jpg" alt="imagen 1" ></li>
+                <li><img src="./img/hockey_3.jpg" alt="imagen 1" ></li>
+            </ul>
+        </div>
+        <section>
             <h2>Contact</h2>
-            <p class="parrafos">Please email us at <a href=""> mdhl@chihockey.org</a></p>
-            <p class="parrafos">We reply to your email as soon as we can.</p>
+            <article class="contenedor">                
+                <p class="parrafos">Please email us at <a href=""> mdhl@chihockey.org</a></p>
+                <p class="parrafos">We reply to your email as soon as we can.</p>
+            </article>
         </section>
-
     </main>
     <footer>
         <p>&#169 Copyright</p>
