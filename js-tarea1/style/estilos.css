@@ -1,0 +1,174 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-encabezado{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.primera-linea{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.header-logo{
+    display: flex;
+    min-width: 15px ;
+    height: auto;
+    margin-left: 2rem;
+}
+.nav-mod{
+    margin-right: 5rem;
+    font-size: 20px;
+
+}
+
+.slice-conteiner{
+    display: flex;
+    height: 10rem;
+   background: rgb(245, 241, 241);
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-slice{
+    margin: 2px;
+    width: 30px;  
+}
+
+.titulo{
+
+    font-size: 5rem;
+}
+
+.form-container{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.formContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    margin-top: 2rem;
+}
+.formDiv{
+    margin: 1rem;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+}
+
+.card-container{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+
+
+}
+.unCard{
+    width: 18rem;
+    margin:2rem 0rem ;
+}
+.unCard2{
+    margin:2rem 0rem ;
+    width: 18rem;
+}
+main {
+    margin: 0rem 9rem 5rem 9rem;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: rgb(245, 241, 241);
+
+}
+.contenedor-lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+
+}
+.details-contenedor{
+    display: flex;
+    justify-content: space-between;
+    /* background: wheat; */
+    width: 100%;
+    height: 30rem;
+    padding: 3rem;
+
+}
+.details-contenedor-img{
+    padding: 1rem;
+    /* background: blueviolet; */
+    width: 100%;
+}
+.details-img{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.details-contenedor-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: violet; */
+    padding: 1rem;
+}
+.info-p{
+    /* background: red; */
+    width: 80%;
+    padding: 50px;
+}
+.stats-contenedor{
+    display: flex;
+    justify-content: space-between;
+    /* background: wheat; */
+    width: 100%;
+    height: 30rem;
+    padding: 3rem;
+
+}
+
+.link{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    /* background: rgb(0, 0, 0); */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%  ;
+    text-decoration: none;
+    padding: 4px;
+    margin: 0px 2rem;
+
+}
+
+.icon{
+    margin: 2px;
+    width: 30px;
+    background-color: rgb(253, 253, 253);
+}
+.p-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6rem;
+    font-size: 30px;
+}
