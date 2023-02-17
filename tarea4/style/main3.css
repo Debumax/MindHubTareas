@@ -118,6 +118,21 @@ footer{
     margin: 10px;
 }
 
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+}
+.titulado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
 /* ---------- formularios ----------- */
 
 .titulo-pag{
@@ -128,6 +143,9 @@ footer{
     padding: 10px;
 }
 .titulo-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     /* background: rgb(116, 98, 153); */
 }
@@ -193,6 +211,11 @@ footer{
     border-bottom:2px solid black ;
 }
 
+.mapa{
+    display: flex;
+    justify-content: space-around;
+    
+}
 /* --- Media Queries---- */
 @media only screen and (max-width:360px){
 body{       
