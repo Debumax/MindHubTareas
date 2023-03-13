@@ -171,3 +171,21 @@ var data = {
       }
     ]
   };
+
+
+
+// ----- creo array de categorias para luego filtrar 
+let cat = [];
+data.events.forEach(evn =>{ cat.push(evn.category) } )
+
+let categorias = cat.filter((item,index)=>{
+    return cat.indexOf(item)===index;
+})
+
+//////////////////////////////////////////////////////
+
+//--------- creo array de Eventos 
+const Eventos = [];
+data.events.forEach(even => Eventos.push(even));
+
+/////////////////////////////////////////////////////

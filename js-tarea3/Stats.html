@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="icon" href="./assets/favicon.png" >
   <link rel="stylesheet" href="./style/estilos.css">
-  <title>Details</title>
+  <title>Stats</title>
 </head>
 <body>
   <header class="container-encabezado">
@@ -15,7 +15,7 @@
           <img src="./assets/LogoAmazingEvents.png" class="header-logo" alt="logo">
           <nav class="navbar navbar-expand-lg nav-mod ">
               <div class="container-fluid">
-                <a class="navbar-brand" href="#">Home</a>
+                <a class="navbar-brand" href="index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -26,9 +26,6 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="./PastEvents.html">Past Events</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./Details.html">Details</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="./Contact.html">Contacts</a>
@@ -45,29 +42,63 @@
 
       <div class="slice-conteiner">
           
-              <a href="./PastEvents.html"> <img class="icon-slice" src="./assets/icons/chevron-left-solid.svg" alt="izquierda" title="Past Events"></a>
-              <p class="titulo">Details</p>
-              <a href="./Contact.html"><img class="icon-slice" src="./assets/icons/chevron-right-solid.svg" alt="derecha" title="Contacts"></a>
+              <a href="./Contact.html"> <img class="icon-slice" src="./assets/icons/chevron-left-solid.svg" alt="izquierda" title="Contacts"></a>
+              <p class="titulo"> Stats </p>
+              <a href="./index.html"><img class="icon-slice" src="./assets/icons/chevron-right-solid.svg" alt="derecha" title="Home"></a>
           
       </div>
 
   </header>
-  <main>
-    
-    <div class="details-contenedor">
-      <div class="details-contenedor-img">
-        <img class="details-img" src="./assets/Music_Concert.jpg" alt="concierto">
-      </div>
-      <div class="details-contenedor-info">
-        <h1 >titulo card</h3>
-        <p class="info-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quidem nobis repudiandae dolores alias reiciendis quo quam consequatur ab molestiae beatae error deleniti fugiat quos, veritatis recusandae possimus eveniet. Repellendus.</p>
-      </div>
-
+  <main class="container-main">
+    <div class="stats-contenedor" >
+      <table class="table">
+        <thead>
+          <tr>            
+            <th colspan="3" style="background-color: rgb(240, 236, 236);">Events Statics</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td >Larry the Bird</td>            
+            <td>@twitter</td>
+            <td>Thornton</td>
+          </tr>
+          <tr>            
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <th colspan="3" style="background-color: rgb(240, 236, 236);">Upcoming events statics category</th>
+          <tr>            
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td >Larry the Bird</td>            
+            <td>@twitter</td>
+            <td>Thornton</td>
+          </tr>
+          <th colspan="3" style="background-color: rgb(240, 236, 236);">Past Events statics by category</th>
+          <tr>
+            <td >Larry the Bird</td>            
+            <td>@twitter</td>
+            <td>Thornton</td>
+          </tr>
+          <tr>
+            <td >Larry the Bird</td>            
+            <td>@twitter</td>
+            <td>Thornton</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+
+    
 
   </main>
   <footer class="container-footer">
-      <div class="contenedor-lista">
+      <div class="contenedor-redes">
           <a class="link" href="#"><img class="icon" src="./assets/icons/square-instagram.svg" alt="instagram"></a>
           <a class="link" href="#"><img class="icon" src="./assets/icons/square-facebook.svg" alt="facebook"></a>
           <a class="link" href="#"><img class="icon" src="./assets/icons/square-whatsapp.svg" alt="whatsapp"></a>
