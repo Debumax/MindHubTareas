@@ -7,14 +7,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="icon" href="./assets/favicon.png" >
   <link rel="stylesheet" href="./style/estilos.css">
-  <script src="./scripts/Data.js"></script>
   <title>Details</title>
 </head>
 <body>
-  <header class="container-encabezado">
-      <div class="primera-linea">
-          <img src="./assets/LogoAmazingEvents.png" class="header-logo" alt="logo">
-          <nav class="navbar navbar-expand-lg nav-mod ">
+  <header >
+          <div class="logo">
+            <img src="./assets/LogoAmazingEvents.png" class="img-logo-header" alt="logo">
+
+          </div>
+          <nav class="navbar navegador navbar-expand-lg nav-mod ">
               <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,9 +30,6 @@
                       <a class="nav-link" href="./PastEvents.html">Past Events</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./Details.html">Details</a>
-                    </li>
-                    <li class="nav-item">
                       <a class="nav-link" href="./Contact.html">Contacts</a>
                     </li>
                     <li class="nav-item">
@@ -42,24 +40,21 @@
               </div>
           </nav>
 
-      </div>
-
-      <div class="slice-conteiner">
-          
-              <a href="./PastEvents.html"> <img class="icon-slice" src="./assets/icons/chevron-left-solid.svg" alt="izquierda" title="Past Events"></a>
-              <p class="titulo">Details</p>
-              <a href="./Contact.html"><img class="icon-slice" src="./assets/icons/chevron-right-solid.svg" alt="derecha" title="Contacts"></a>
-          
-      </div>
-
   </header>
-  <main>
+  <main class="details-main">
+    <div class="slice-conteiner">
+          
+      <a href="./PastEvents.html"> <img class="icon-slice" src="./assets/icons/chevron-left-solid.svg" alt="izquierda" title="Past Events"></a>
+      <p class="slice-titulo">Details</p>
+      <a href="./Contact.html"><img class="icon-slice" src="./assets/icons/chevron-right-solid.svg" alt="derecha" title="Contacts"></a>
+  
+    </div>
     
     <div class="details-contenedor">
     </div>
 
   </main>
-  <footer class="container-footer">
+  <footer >
       <div class="contenedor-redes">
           <a class="link" href="#"><img class="icon" src="./assets/icons/square-instagram.svg" alt="instagram"></a>
           <a class="link" href="#"><img class="icon" src="./assets/icons/square-facebook.svg" alt="facebook"></a>

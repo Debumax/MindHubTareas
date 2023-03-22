@@ -1,12 +1,29 @@
-//console.log([document]);
+
+let urlapi = "https://mindhub-xj03.onrender.com/api/amazing";
+
+async function getData() {
+
+    try {
+        const res = await fetch(urlapi);
+        const datos = await res.json();
+        gereraDetails(datos)
+
+    } catch (error) {
+        console.log(error);
+    }
+
+}
+
+getData();
+
+function gereraDetails(data) {
+    
+
 const queryString= location.search;
 const params = new URLSearchParams(queryString); 
 const id = params.get("id");
 
 const evento = data.events.find( even => even._id===parseInt(id) );  
-
-//console.log(evento);
-
 
 const div = document.querySelector(".details-contenedor");
 div.innerHTML= `
@@ -26,3 +43,5 @@ div.innerHTML= `
 </div>
 
 `
+
+}

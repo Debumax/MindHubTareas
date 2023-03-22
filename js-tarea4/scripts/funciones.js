@@ -8,7 +8,7 @@ function GeneratListEvent(array) {
     for (const even of array) {
         let div = document.createElement('div');
         div.classList.add('card-container');
-        
+
         let div2 = document.createElement('div');
         div2.classList.add('card-modi');
 
@@ -52,11 +52,11 @@ function GeneratListEvent(array) {
 
 
 // --- GENERA LA LISTA DE CHECKBOX
-function GeneraListCheckbox() {
+function GeneraListCheckbox(cat) {
     const checks = document.querySelector(".check-container");
     let fragment2 = document.createDocumentFragment();
 
-    categorias.forEach(cat => {
+    cat.forEach(cat => {
 
         let div2 = document.createElement('div');
         div2.classList.add('form-check');
@@ -87,58 +87,69 @@ function GeneraListCheckbox() {
 
 // ----GENERA UNA LISTA DE EVENTOS SEGUN BUSQUEDA Y CHECK
 function crearLista(arr) {
-    //guardo el contenedor que le paso como parametro al query selector
     let lista = document.getElementById('lista-dinamica');
-    let fragment = document.createDocumentFragment();
+    
     //reseteo el contenido de lista para que no se acumulen los distintos lis
     lista.innerHTML = "";
-    if (arr.length===0) {
+    if (arr.length === 0) {
         let h = document.createElement('h1');
         h.classList.add('card-title');
-        h.textContent ='NO SE ENCONTRARON COINCIDENCIAS';
+        h.textContent = 'NO SE ENCONTRARON COINCIDENCIAS';
         lista.appendChild(h);
     }
     else GeneratListEvent(arr);
-    
+
 }
 
 /////////////////////////////////////
-
-// GENERA LOS CHECKS SELECCIONADOS
-function ckecksSeleccionados() {
+// solo checkbox 
+function BuscaSeleccion(arr) {//EL DE FILTROS
+    
     let seleccionado = [];
-    seleccionado = Array.from(checkboxButtons).filter(checkbox => checkbox.checked);
-
     let categoriasSeleccionadas = [];
+
+    let checkboxButtons = document.querySelectorAll("input[type=checkbox]")
+    
+    let chek= Array.from(checkboxButtons);
+    seleccionado = chek.filter(checkbox => checkbox.checked);
+     
     seleccionado.forEach((cat) => {
         categoriasSeleccionadas.push(cat.defaultValue)
+        
     });
-    return categoriasSeleccionadas;
-}
-///////////////////////
 
-// FUNCION DEL EVENTO CKECK
-function BuscaSeleccion(arr) {//EL DE FILTROS
-    crearLista(filtrarEventos(arr, ckecksSeleccionados()));
+
+
+    crearLista(filtrarEventos(arr, categoriasSeleccionadas));
+
 }
 ////////////////////////////
 
 // FUNCION DEL EVENTO INPUT 
-function buscador(arr) {
+function buscador(arr,value) {
+   
     let encontrado = [];
     let seleccionado = [];
+    let categoriasSeleccionadas=[];
 
-    const texto = inputBuscador.value;
+    //const texto = inputBuscador.value;
     ////// BUSQUEDA Y FILTRADO 
 
-    let checkboxButtons = document.querySelectorAll("input[type=checkbox]")
+    let checkboxButtons = document.querySelectorAll("input[type=checkbox]")  
+    let chek= Array.from(checkboxButtons);
+    seleccionado = chek.filter(checkbox => checkbox.checked);
+    
+    seleccionado.forEach((cat) => {
+        categoriasSeleccionadas.push(cat.defaultValue)
+        
+    });
 
-    if (ckecksSeleccionados().length === 0 || ckecksSeleccionados().length === 7) {
-        encontrado = BuscandoTexto(arr, texto)
+    if (categoriasSeleccionadas.length === 0 || categoriasSeleccionadas.length === 7) {
+        encontrado = BuscandoTexto(arr, value)
     }
     else {
-        let arrayNuevosEventos = filtrarEventos(arr, ckecksSeleccionados())
-        encontrado = BuscandoTexto(arrayNuevosEventos, texto);
+        let arrayNuevosEventos = filtrarEventos(arr, categoriasSeleccionadas)
+        encontrado = BuscandoTexto(arrayNuevosEventos, value);
     }
 
     crearLista(encontrado, "#lista-dinamica")
@@ -149,11 +160,11 @@ function buscador(arr) {
 
 //BUSCA TEXTO SEGUN ARRAY  
 
-function BuscandoTexto(array , valor){
-    let searched=[]
+function BuscandoTexto(array, valor) {
+    let searched = []
     array.forEach(even => {
-        if (even.name.toLowerCase().includes(valor.toLowerCase()) || even.description.toLowerCase().includes(valor.toLowerCase()) ) {
-            searched.push(even);         
+        if (even.name.toLowerCase().includes(valor.toLowerCase()) || even.description.toLowerCase().includes(valor.toLowerCase())) {
+            searched.push(even);
         }
     });
     return searched;
@@ -187,3 +198,4 @@ function filtrarEventos(array, seleccionados) {
         return filtradochecBusc
     }
 }
+

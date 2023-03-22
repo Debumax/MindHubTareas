@@ -1,88 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="icon" href="./assets/favicon.png" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="icon" href="./assets/favicon.png">
   <link rel="stylesheet" href="./style/estilos.css">
   <title>Epcoming Events</title>
-  
+
 </head>
+
 <body>
-  <header class="container-encabezado">
-      <div class="primera-linea">
-          <img src="./assets/LogoAmazingEvents.png" class="header-logo" alt="logo">
-          <nav class="navbar navbar-expand-lg nav-mod ">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">Home</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Upcoming Events</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./PastEvents.html">Past Events</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./Contact.html">Contacts</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./Stats.html">Stats</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-          </nav>
+  <header>
+    <div class="logo">
+      <img src="./assets/LogoAmazingEvents.png" class="img-logo-header" alt="logo">
 
+    </div>
+    <nav class="navbar navegador navbar-expand-lg nav-mod ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Upcoming Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./PastEvents.html">Past Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact.html">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Stats.html">Stats</a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div class="slice-conteiner">
-          
-              <a href="./index.html"> <img class="icon-slice" src="./assets/icons/chevron-left-solid.svg" alt="izquierda" title="Home"></a>
-              <p class="titulo"> Upcoming Events </p>
-              <a href="./PastEvents.html"><img class="icon-slice" src="./assets/icons/chevron-right-solid.svg" alt="derecha" title="Past Events"></a>
-          
-      </div>
+    </nav>
 
   </header>
   <main>
-    <div class="form-container">
-      <form  class="form-container-form">
-        <div class="check-container">                
+    <div class="slice-conteiner">
 
-       </div>
-        
-        <div >
-            <div class="search-container">
-                <input class="form-control " type="search" placeholder="Search" id="buscador">
-            </div>
+      <a href="./index.html"> <img class="icon-slice" src="./assets/icons/chevron-left-solid.svg" alt="izquierda"
+          title="Home"></a>
+      <p class="slice-titulo"> Upcoming Events </p>
+      <a href="./PastEvents.html"><img class="icon-slice" src="./assets/icons/chevron-right-solid.svg" alt="derecha"
+          title="Past Events"></a>
+
+    </div>
+    <div class="form-container">
+      <form class="form-container-form">
+        <div class="check-container">
+
         </div>
-        
-</form>
+
+        <div>
+          <div class="search-container">
+            <input class="form-control " type="search" placeholder="Search" id="buscador">
+          </div>
+        </div>
+
+      </form>
     </div>
 
 
 
-      <div id="lista-dinamica"  class="contenedor-lista">
-      </div>
-      
+    <div id="lista-dinamica" class="contenedor-lista">
+    </div>
+
   </main>
   <footer class="container-footer">
-      <div class="contenedor-redes">
-          <a class="link" href="#"><img class="icon" src="./assets/icons/square-instagram.svg" alt="instagram"></a>
-          <a class="link" href="#"><img class="icon" src="./assets/icons/square-facebook.svg" alt="facebook"></a>
-          <a class="link" href="#"><img class="icon" src="./assets/icons/square-whatsapp.svg" alt="whatsapp"></a>
-      </div>
-      <p class="p-footer">Cohort</p>
+    <div class="contenedor-redes">
+      <a class="link" href="#"><img class="icon" src="./assets/icons/square-instagram.svg" alt="instagram"></a>
+      <a class="link" href="#"><img class="icon" src="./assets/icons/square-facebook.svg" alt="facebook"></a>
+      <a class="link" href="#"><img class="icon" src="./assets/icons/square-whatsapp.svg" alt="whatsapp"></a>
+    </div>
+    <p class="p-footer">Cohort</p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <script src="./scripts/Data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
   <script src="./scripts/funciones.js"></script>
   <script src="./scripts/upcoming.js"></script>
 </body>
+
 </html>
